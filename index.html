@@ -5,24 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pool Repair & Maintenance | 24/7 Service – Triangle Area, NC</title>
   <meta name="description" content="Professional pool repair, maintenance, leak detection, pump & filter service, and remodels in the Triangle area. Fast response, upfront pricing. Call today."/>
-  
+ 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  
+ 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  
+ 
   <style>
     :root {
-      --primary: #006699;      /* Professional blue */
-      --accent: #ff6b35;       /* Orange for highlights */
+      --primary: #006699; /* Professional blue */
+      --accent: #ff6b35; /* Orange for highlights – kept for borders/icons if needed */
+      --carolina-blue: #7BAFD4;   /* Carolina Blue for second section */
+      --fire-red: #CE2029;        /* ← Fire engine red for CTA section */
       --dark: #1e293b;
       --gray: #64748b;
       --light: #f8fafc;
-      --trust-bg: #e6f2ff;     /* Light trust blue */
+      --trust-bg: #e6f2ff; /* Light trust blue */
       --border: #e2e8f0;
     }
-    
+   
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       font-family: 'Inter', sans-serif;
@@ -31,9 +33,9 @@
       background: #fff;
     }
     a { text-decoration: none; color: inherit; }
-    
+   
     .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-    
+   
     /* Hero */
     header {
       background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url('https://jasaquatics.com/wp-content/uploads/2023/05/jas-aquatics-suffolk-county-ny-back-yardswimm-ing.webp') center/cover no-repeat;
@@ -67,7 +69,7 @@
       box-shadow: 0 4px 12px rgba(0,102,153,0.2);
     }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,102,153,0.3); }
-    
+   
     .trust {
       display: flex;
       justify-content: center;
@@ -77,7 +79,7 @@
       font-size: 1.1rem;
     }
     .trust span { background: rgba(255,255,255,0.2); padding: 8px 18px; border-radius: 6px; backdrop-filter: blur(4px); }
-    
+   
     /* Sections */
     section { padding: 80px 0; }
     h2 {
@@ -94,7 +96,7 @@
       margin: 0 auto 3rem;
       color: var(--gray);
     }
-    
+   
     .benefits-section {
       background: var(--trust-bg);
     }
@@ -121,7 +123,7 @@
       color: var(--primary);
       margin-bottom: 1rem;
     }
-    
+   
     /* Service Images */
     .service-images {
       display: flex;
@@ -137,7 +139,7 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
       object-fit: cover;
     }
-    
+   
     /* Mid-page image - full width for impact */
     .mid-image {
       text-align: center;
@@ -149,20 +151,25 @@
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
-    
+   
     .cta-section {
       text-align: center;
       padding: 90px 20px;
-      background: var(--light);
+      background: var(--fire-red);       /* Fire engine red */
+      color: white;
+    }
+    .cta-section h2,
+    .cta-section .lead,
+    .cta-section .phone {
+      color: white;
     }
     .phone {
       font-size: 3.2rem;
       font-weight: 700;
-      color: var(--primary);
       margin: 1.5rem 0;
       display: block;
     }
-    
+   
     footer {
       background: var(--dark);
       color: #cbd5e1;
@@ -170,7 +177,7 @@
       padding: 60px 20px 30px;
       font-size: 0.95rem;
     }
-    
+   
     @media (max-width: 768px) {
       header { padding: 80px 15px 60px; }
       header h1 { font-size: 2.2rem; }
@@ -181,15 +188,14 @@
   </style>
 </head>
 <body>
-
   <!-- Hero -->
   <header>
     <div class="container">
       <h1>Professional Pool Repair & Maintenance</h1>
       <p>Fast response for leaks, pump & filter repairs, equipment issues, green water, and scheduled maintenance. Serving the Triangle Area with licensed technicians and upfront pricing.</p>
-      
+     
       <a href="tel:+19199999999" class="btn"><i class="fas fa-phone"></i> Call (919) 999-9999</a>
-      
+     
       <div class="trust">
         <span><i class="fas fa-check-circle"></i> Same-Day Response Available</span>
         <span><i class="fas fa-shield-alt"></i> Licensed & Insured</span>
@@ -198,12 +204,12 @@
     </div>
   </header>
 
-  <!-- Benefits -->
+  <!-- Benefits (first section) -->
   <section class="benefits-section">
     <div class="container">
       <h2>Why Homeowners Choose Us</h2>
       <p class="lead">We focus on quick, correct fixes and reliable ongoing service so your pool stays clear and equipment runs efficiently year-round.</p>
-      
+     
       <div class="benefits">
         <div class="benefit">
           <i class="fas fa-clock"></i>
@@ -220,11 +226,7 @@
           <h3>Licensed Technicians</h3>
           <p>Experienced, background-checked professionals who know Triangle-area pools.</p>
         </div>
-        <div class="benefit">
-          <i class="fas fa-toolbox"></i>
-          <h3>Well-Equipped Service</h3>
-          <p>Trucks stocked for most repairs on the first visit.</p>
-        </div>
+        <!-- "Well-Equipped Service" box remains removed -->
       </div>
 
       <div class="service-images">
@@ -232,53 +234,18 @@
         <img src="https://images.squarespace-cdn.com/content/v1/5c51c2092971147f622006cb/1688576747002-EKPXSG6ZMI8695CDR1CS/pool-equipment.jpeg?format=2500w" alt="Professional repairing pool equipment">
         <img src="https://spiropools.com/wp-content/uploads/2025/03/spiro-pools-repair-01.webp" alt="Pool service team working on plumbing">
       </div>
-      
+     
       <div style="text-align:center; margin-top:3rem;">
         <a href="tel:+19199999999" class="btn"><i class="fas fa-phone"></i> Get a Quote Today</a>
       </div>
     </div>
   </section>
 
-  <!-- Large Jobs -->
-  <section style="background:#f8fafc;">
+  <!-- Second section – Carolina Blue (unchanged) -->
+  <section style="background: var(--carolina-blue); color: #1e293b;">
     <div class="container">
       <h2>Handling All Pool Repairs & Remodels</h2>
       <p class="lead">From emergency pump failures and leaks to filter replacements, plumbing issues, and complete remodel projects—we have the expertise and equipment to get it done right.</p>
-      
+     
       <div style="text-align:center; margin:3rem 0;">
-        <a href="tel:+19199999999" class="btn"><i class="fas fa-tools"></i> Schedule Service or Remodel Consultation</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mid-page professional image -->
-  <div class="mid-image">
-    <img src="https://papcomshared.blob.core.windows.net/app/service/equipment-header.jpg" alt="Professional pool technician performing equipment repair">
-  </div>
-
-  <!-- Urgency / Final CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Pool Issues Can Escalate Quickly</h2>
-      <p class="lead">Leaks, poor circulation, failing equipment, or unbalanced water chemistry can lead to bigger problems and higher costs the longer they go unaddressed. Call us today for prompt, professional service.</p>
-      
-      <a href="tel:+19199999999" class="phone">(919) 999-9999</a>
-      <a href="tel:+19199999999" class="btn" style="font-size:1.3rem; padding:16px 40px; margin-top:1rem;">
-        Call 24/7 for Immediate Help
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>Your Pool Company Name<br>Durham, NC • Serving the Triangle Area</p>
-      <p style="margin-top:1.2rem;">Licensed • Insured • Local Service</p>
-      <p style="margin-top:2rem; opacity:0.8;">
-        © 2026 Your Pool Company. All rights reserved.
-      </p>
-    </div>
-  </footer>
-
-</body>
-</html>
+        <a href="tel:+19199999999" class="btn" style="background:var(--primary); color:white;
